@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+       font-family: "Noto Sans", sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 1140px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin: 30px auto 50px auto;
+    }
+    h2 {
+      text-align: center;
+    }
+
+    .flexsec{
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+    }
+    .totals {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        
+        gap: 10px;
+      flex-wrap: wrap;
+      
+    }
+
+    .income_sec, .expense_sec,.balance_sec{
+        
+        width: 130px;
+        height: 100px;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        color: #fff;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    }
+    .income_sec{
+ background-color: #2E8B57;
+    }
+    .expense_sec{
+        background-color: #CD5C5C;
+    }
+    .balance_sec{
+        background-color: #6A5ACD ;
+       
+    }
+    .income_text1,.expense_text1,.balance_text1{
+        margin-top: 10px;
+    }
+
+   
+    .form-control {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+    input[type="text"], input[type="number"], input[type="date"], select {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+       width: 49.5%;
+     margin-top: 20px;
+     color: #000;
+     
+    }
+    input::placeholder{
+        color: #000 ;
+    }
+
+    .btn_sec{
+        margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 30px;
+      border: none;
+      background: #28a745;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: 0.30s;
+     box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+    }
+    .addbtn:hover{
+        background-color: #2E8B57;
+           transition: 0.30s
+
+    }
+    .resetbtn{
+        margin-left: 20px;
+        background-color: #CD5C5C;
+  
+    }
+
+    .edit:hover{
+        background-color: #6A5ACD;
+          transition: 0.30s
+    }
+    .delete:hover{
+        background-color: #000;
+          transition: 0.30s
+    }
+    button:hover{
+        transform: scale(1.03);
+    }
+    
+    .resetbtn:hover{
+        background-color:#af4848 ;
+        transition: 0.30s
+    }
+
+    .filters {
+      display: flex;
+      justify-content: center;
+      margin: 10px 0;
+      gap: 10px;
+    }
+  
+    table {
+      width: 1140px;
+      border-collapse: collapse;
+      margin-top: 20px;
+      margin: auto;
+      background-color: #fff;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+      
+    }
+
+    th, td {
+      border: 1px solid #d4d4d4;
+      padding: 10px;
+      text-align: left;
+      padding-left: 20px;
+    }
+    th {
+      background-color: #008080;
+      
+    color: #fff;
+    }
+    .delete {
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .edit {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .edit{
+        margin-right: 10px;
+    }
+    .edit,.delete{
+padding: 5px 10px;
+    }
+    @media (max-width: 600px) {
+      .form-control {
+        flex-direction: column;
+      }
+    
+    }
+
+
+    @media screen and (max-width:1199px ) and (min-width:768px) {
+        .container,table{
+            max-width: 90%;
+            width: 90%;
+        }
+        
+    }
+    @media screen and (max-width:992px) and (min-width:768px) {
+        input[type="text"], input[type="number"], input[type="date"], select{
+            width: 100%;
+        }
+        .form-control{
+            width: 90%;
+        }
+        .totals{
+            width: 80%;
+        }
+        
+    }
+    @media screen and (max-width:767px) {
+            input[type="text"], input[type="number"], input[type="date"], select{
+            width: 100%;
+        }
+        .flexsec{
+            flex-direction: column;
+        }
+        .container{
+            max-width: 95%;
+
+        }
+        .table_container{
+            width: 100%;
+            overflow-x: auto !important;
+        }
+        table{
+      width: 1000px;
+            
+        }
+        .totals{
+            width: 100%;
+            margin: 30px 0px;
+            justify-content: space-between;
+            gap:10px
+        }
+        .btn_sec{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            gap:50px
+        }
+        .resetbtn{
+            margin-left: 0px;
+        }
+
+    }
+
+    @media screen and (max-width:599px) {
+        .income_sec,.expense_sec,.balance_sec{
+width: 120px;
+height: 90px;
+        }
+    }
+       @media screen and (max-width:499px) {
+        .income_sec,.expense_sec,.balance_sec{
+width: 140px;
+height: 100px;
+        }
+        .balance_sec{
+            margin-top: 30px;
+        }
+    }
+        @media screen and (max-width:399px) {
+        .income_sec,.expense_sec,.balance_sec{
+width: 120px;
+height: 100px;
+font-size: 14px;
+        }
+    }
+       @media screen and (max-width:359px) {
+        .income_sec,.expense_sec,.balance_sec{
+width: 100px;
+height: 100px;
+padding: 0px 10px;
+text-align: center;
+font-size: 14px;
+        }
+    }
+    
+    

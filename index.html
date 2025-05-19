@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Income Expense Calculator</title>
+ 
+    <link href="assets/css/index.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+ <main>
+    <section >
+         <div class="container">
+    <h2>Income Expense Calculator</h2>
+ <div class="flexsec">
+        <div class="form-control">
+      <form class="form ">
+        <input type="text" id="description" placeholder="Description">
+      <input type="number" id="amount" placeholder="Amount">
+      <input type="date" id="date" />
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <div class="btn_sec">
+          <button onclick="addEntry()" class="addbtn">Add</button>
+      <button onclick="resetFields()" class="resetbtn">Reset</button>
+      </div>
+      </form>
+     
+    </div>
+    <div class="totals">
+      <div class="income_sec">Total Income: <br>
+        <span class="income_text1">
+         ₹ <span id="total-income">0</span>
+      </span></div>
+      <div class="expense_sec">Total Expense: <br>
+    <span class="expense_text1">
+       ₹ <span id="total-expense">0</span>
+    </span>
+    </div>
+      <div class="balance_sec">Balance: <br>
+    <span class="balance_text1">
+        ₹ <span id="net-balance">0</span>
+    </span>
+    </div>
+    </div>
+ </div>
+   
+   
+    <div class="filters">
+      <label><input type="radio" name="filter" value="all" checked onchange="renderEntries()"> All</label>
+      <label><input type="radio" name="filter" value="income" onchange="renderEntries()"> Income</label>
+      <label><input type="radio" name="filter" value="expense" onchange="renderEntries()"> Expense</label>
+    </div>
+
+    
+        </div>
+       <div class="table_container">
+         <table>
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Amount</th>
+          <th>Date</th>
+          <th>Income/ Expense</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="entries">
+        <!-- Entries will be injected here -->
+      </tbody>
+    </table>
+    
+       </div>
+    </section>
+ </main>
+<script src="assets/js/index.js"></script>
+</body>
+</html>

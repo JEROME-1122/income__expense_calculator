@@ -1,0 +1,19 @@
+Step 1 -  create index.html, index.css, index.js. link css and js files
+
+Step 2 -  create one container inside the container added heading and add form with 4 fields (description, amount,      date ,  and select type (income, and expence)). add two buttons one is add another one is reset add using add the valuse rest button  using reset the input values 
+
+Step 3 -  Then we add find how much total salary, expense and how much balace using three boxes 
+
+Step  4-  The filiter using radio button all- using to see all details, Income- filter the income details, Expense- filter the expense details
+
+Step  5-  Finally we create the table for rendering tha vale here description, amount and type(income/expense) and action section(here edit and delete button)
+
+Step  6 -  create one varible for store the value in local storage . save the date using  setItem method to push the value . if we click reset button make all filed value empty (create function restField()). And push the value using addEntry() if any one input  value is empty show the alert  if all input fill push the value inside the addEntry() function call save rest and render fucntion to disply values 
+
+Step 7 -  Create reenderEntried function to render the value into table forEach method used to render what value in store in localstorage and we have three box for income expense and balance if type (select value is income add the income value in income box ) if not come or expense add into expense box . balance income-expense value to find tha balance . And if the balance less than 0 box color change functionality used.
+
+Step 8 -  in the table we have edit button if we click  edit button which index we click that go to the form  document.getElementById('id_name').value = entry.name using to  get the table value into the form 
+
+Step  9 - Have delete button to dlt row using splice method to remove the row using if condition to confirm dlt entry . and if delete call svae and render function to render again .
+ 
+ Step 10 -  If we load the website need to render velue so add the window.onload=renderEntries
