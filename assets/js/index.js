@@ -1,5 +1,5 @@
 
-    let entries = JSON.parse(localStorage.getItem('entries')) ;
+    let entries = JSON.parse(localStorage.getItem('entries')) || [];
     let editId = null;
 
     function saveToLocalStorage() {
