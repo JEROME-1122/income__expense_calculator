@@ -207,6 +207,10 @@ padding: 5px 10px;
         .totals{
             width: 80%;
         }
+      .container,table{
+            max-width: 95%;
+            width: 95%;
+        }
         
     }
     @media screen and (max-width:767px) {
