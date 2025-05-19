@@ -97,4 +97,4 @@
       }
     }
 
-    window.onload = renderEntries;
+    window.onload = renderEntries();
